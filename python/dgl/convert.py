@@ -321,7 +321,7 @@ def heterograph(data_dict,
             if num_nodes_dict[dty] < vrange:
                 raise DGLError('The given number of nodes of node type {} must be larger than'
                                ' the max ID in the data, but got {} and {}.'.format(
-                                   sty, num_nodes_dict[dty], vrange - 1))
+                                   dty, num_nodes_dict[dty], vrange - 1))
     # Create the graph
 
     # Sort the ntypes and relation tuples to have a deterministic order for the same set
